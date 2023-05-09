@@ -1,0 +1,12 @@
+FROM python:3.9.16
+
+WORKDIR /app
+
+# install py libraries
+COPY docker/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# COPY .kaggle /root/.kaggle
+# RUN chmod 600 /root/.kaggle/kaggle.json
+
+CMD [ "bash" ]
