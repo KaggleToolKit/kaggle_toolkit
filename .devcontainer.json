@@ -1,0 +1,12 @@
+{
+    "name": "Kaggle Toolkit development container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "main",
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/app",
+    // "remoteUser": "vscode"
+    "overrideCommand": true,
+    "extensions": [
+        "ms-python.python"
+    ]
+}
